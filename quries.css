@@ -1,0 +1,17 @@
+/*****************************/
+/* For bigger screen 1648px  */
+/*****************************/
+
+@media (min-width: 103em) {
+  .box-heading {
+    font-size: 3rem;
+  }
+
+  .box-text {
+    font-size: 2rem;
+  }
+
+  .box-img {
+    width: 30%;
+  }
+}
