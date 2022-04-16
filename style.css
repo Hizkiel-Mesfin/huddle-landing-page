@@ -1,0 +1,275 @@
+/* 
+COLOR
+
+Primary
+
+Pink: 	#ff52bf
+
+Neutral
+
+- Very Pale Cyan: 	#ebfbff
+- Very Dark Cyan: 	#00252e
+- Grayish Blue: 	#808d99
+
+*/
+
+/******************/
+/* GERNERAL */
+/******************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  color: #00252e;
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
+}
+
+/******************/
+/* REUSABLE */
+/******************/
+
+.flex-hori {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.flex-verti {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #808d99;
+}
+
+/******************/
+/* HEADER */
+/******************/
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/bg-hero-desktop.svg);
+  background-size: cover;
+  padding: 6rem 12rem;
+  background-color: #ebfbff;
+  margin-bottom: 18rem;
+}
+
+.top-most {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9.6rem;
+}
+
+.logo {
+  width: 15%;
+}
+
+.link-header:link,
+.link-header:visited {
+  text-decoration: none;
+  color: #00252e;
+  background-color: #fff;
+  padding: 1.2rem 5.2rem;
+  border-radius: 10rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+
+  transition: all 0.3s;
+}
+
+.link-header:hover {
+  transform: translateY(4px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.link-header:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/******************/
+/* HERO */
+/******************/
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-img {
+  width: 50%;
+  height: auto;
+}
+
+.hero-text {
+  padding-right: 8.4rem;
+}
+
+.heading-hero {
+  font-size: 4rem;
+  margin-bottom: 3.2rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.text-hero {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+}
+
+.link-hero:link,
+.link-hero:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff52bf;
+  color: #fff;
+  font-weight: 700;
+  padding: 1.4rem 5.4rem;
+  border-radius: 10rem;
+
+  transition: all 0.3s;
+}
+
+.link-hero:hover {
+  transform: translateY(4px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.link-hero:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/******************/
+/* SECTION-BOX  */
+/******************/
+
+.section-box {
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30rem;
+}
+
+.box {
+  padding: 9.6rem;
+  display: flex;
+  height: 40rem;
+  gap: 10rem;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.text-box {
+  padding-top: 3.2rem;
+}
+
+.box-heading {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.box-text {
+  font-size: 1.7rem;
+  color: #808d99;
+  line-height: 1.6;
+}
+
+.box-img {
+  width: 40%;
+}
+
+/******************/
+/* CTA */
+/******************/
+
+.cta {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.cta-text {
+  font-size: 3.2rem;
+  color: #00252e;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+/******************/
+/* FOOTER */
+/******************/
+
+.footer {
+  background-color: #00252e;
+  padding: 25rem 15rem 10rem 15rem;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  grid-template-columns: repeat(4, 1fr);
+  color: #fff;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.footer-logo {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(1000%);
+  transform: scale(0.2);
+  transform: translate(0, -200%);
+  position: absolute;
+}
+
+.contacts {
+  /* grid-column: span 2; */
+  position: relative;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.copy {
+  font-size: 1.2rem;
+  position: absolute;
+  right: 10rem;
+  bottom: 5rem;
+}
